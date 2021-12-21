@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSBT's Library System</title>
+    <link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>
+                <h2>SSBT's Library</h2>
+            </li>
+            <li><a href="#">Home</a></li>
+        </ul>
+        <div id="message"></div>
+        <h1>Welcome To Library</h1>
+    </div>
+
+    <div class="container">
+        <form action="" class="form" method="">
+            <h2>Add Book</h2>
+            <input type="text" class="inp" id="bookName" name="bookName" placeholder="Enter Book Name">
+            <div id="nameErrorText" style="visibility: hidden;">
+                <p>Book Name Should be greater than 4 character.</p>
+            </div>
+            <input type="text" class="inp" id="author" name="author" placeholder="Enter Author Name">
+            <div id="authorErrorText" style="visibility: hidden;">
+                <p> Author Name Should be greater than 4 character.</p>
+            </div>
+            <h4 id="cat">Choose Category</h4>
+            <input type="radio" id="college" name="type" value="College">
+            <label for="college">College</label>
+            <input type="radio" id="cooking" name="type" value="Cooking">
+            <label for="cooking">Cooking</label>
+            <input type="radio" id="english" name="type" value="English">
+            <label for="english">English</label>
+            <button id="btn" class="addBtn">Add Book</button>
+        </form>
+        <hr>
+        <h1>Books in Library</h1>
+        <button class="delBtn" id="delBtn">Remove Books</button>
+        <button class="delBtn" id="doneBtn" style="display: none;">Done</button>
+    </div>
+
+    <section class="booklist">
+        <div class="booktable">
+            <table id="showBook">
+
+            </table>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+    <!-- <script src="deleteBook.js"></script> -->
+</body>
+
+</html>
