@@ -1,1 +1,1 @@
-# college-library
+# College library system using javascript/html/css.
